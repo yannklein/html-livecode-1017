@@ -1,24 +1,27 @@
-.cards {
-  display: flex;
-}
-
-.card-container {
-  padding: 24px;
-  width: 400px;
-}
-
 .card-white {
+  margin-top: 56px;
   background-color: white;
-  border-radius: 4px;
-  padding: 8px;
+  width: 500px;
+  /* height: 300px; */
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
-.card-image {
-  height: 240px;
+.card-img {
+  height: 300px;
+  background-size: cover;
+}
+
+.card-white a {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.card-white:hover a {
+  opacity: 1;
 }
 
 .card-footer {
-  margin-top: 8px;
   display: flex;
   align-items: center;
 }
@@ -27,11 +30,8 @@
   margin-right: 8px;
 }
 
-.card-image a {
-  opacity: 0;
-}
-
-.card-white:hover .card-image a {
-  opacity: 1;
-  transition: 1s;
+.cards {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
 }
